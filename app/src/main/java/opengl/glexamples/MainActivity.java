@@ -15,6 +15,7 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
 import opengl.glexamples.glActivity.CreateIDCardActivity;
+import opengl.glexamples.glActivity.CurlActivity;
 import opengl.glexamples.glActivity.IDCardActivity;
 import opengl.glexamples.glActivity.LightOpenglActivity;
 import opengl.glexamples.glActivity.SkyBoxActivity;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     Button createIDCard;
     Button skybox;
     Button lightcard;
+    Button pagecurl;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -82,6 +84,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, LightOpenglActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        pagecurl = (Button) findViewById(R.id.page_curl_card);
+        pagecurl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, CurlActivity.class);
                 startActivity(intent);
             }
         });

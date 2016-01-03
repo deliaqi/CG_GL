@@ -31,4 +31,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/light_card"
         android:text="灯光名片"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/page_curl_card"
+        android:text="卷轴翻页"/>
 </LinearLayout>
